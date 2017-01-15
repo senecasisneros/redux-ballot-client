@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js \"test/**/*@(.js|.jsx)\"",
     "test:watch": "npm run test -- --watch",
-    "lint:watch": "./node_modules/.bin/esw -w --color --fix ./src/ ./test/"
+    "lint": "./node_modules/.bin/esw --watch --color --fix ./src/ ./test/"
   },
   "author": "",
   "license": "ISC",
@@ -34,6 +34,7 @@
     "eslint-watch": "^2.1.14",
     "immutable": "^3.8.1",
     "react": "^15.4.2",
+    "react-addons-pure-render-mixin": "^15.4.2",
     "react-addons-test-utils": "^15.4.2",
     "react-dom": "^15.4.2"
   },
