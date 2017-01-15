@@ -1,5 +1,5 @@
 import React from 'react';
-import winner from './Winner';
+import Winner from './Winner';
 import Vote from './Vote';
 
 export default React.createClass({
