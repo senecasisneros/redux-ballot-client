@@ -15,11 +15,11 @@ export const Voting = React.createClass({
   }
 });
 
-function mapStateToPros(state) {
+function mapStateToProps(state) {
   return {
     pair: state.getIn(['vote', 'pair']),
     winner: state.get('winner')
   };
 }
 
-export const VotingContainer = connect(mapStateToPros)(Voting);
+export const VotingContainer = connect(mapStateToProps)(Voting);
